@@ -1,18 +1,20 @@
-// IMPORT MODULES under test here:
-// import { example } from '../example.js';
+import { renderCharacters } from '../render-utils.js';
 
 const test = QUnit.test;
 
-test('time to test a function', (expect) => {
-    //Arrange
-    // Set up your arguments and expectations
-    const expected = true;
-    
-    //Act 
-    // Call the function you're testing and set the result to a const
-    const actual = true;
+test('renderCharacters should create a div displaying character image, name and anchor tag to click', (expect) => {
+    const expected = `<a href="./character-page/?id=4"><div class="character-select"><img src="/assets/pleakley.png" class="character-image"><p class="character-name">Wendy Pleakley</p></div></a>`;
 
-    //Expect
-    // Make assertions about what is expected versus the actual result
-    expect.equal(actual, expected);
+    const agentPleakley = {
+        id: '4',
+        name: 'Wendy Pleakley',
+        quote: 'Notable Quote: "HERE! Educate yourself."',
+        occupation: 'Occupation: United Galactic Federation Agent',
+        likes: 'Agent Pleakley enjoys the following: Cleanliness, mosquitos and disguises.',
+        image: 'pleakley',
+    };
+    const actual = renderCharacters(agentPleakley);
+
+    expect.equal(actual.outerHTML, expected);
+
 });
