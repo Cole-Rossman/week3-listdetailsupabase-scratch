@@ -10,7 +10,7 @@ export async function getCharacters() {
     return checkError(resp);
 }
 
-export async function getcharacter(id) {
+export async function getCharacter(id) {
     const resp = await client.from('characters').select('*').eq('id', id).single();
 
     return checkError(resp);

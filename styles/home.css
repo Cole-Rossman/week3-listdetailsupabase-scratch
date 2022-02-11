@@ -1,1 +1,7 @@
-/* add home page styles here */
+@media (min-width: 800px) {
+
+    #character-list {
+        width: 100%;
+        
+    }
+}
