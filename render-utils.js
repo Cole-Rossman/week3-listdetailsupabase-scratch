@@ -4,7 +4,7 @@ export function renderCharacters(character) {
     const img = document.createElement('img');
     const nameP = document.createElement('p');
 
-    div.classList.add('character-select');
+    div.classList.add('characters-select');
     
     img.src = `/assets/${character.image}.png`;
     img.classList.add('character-image');

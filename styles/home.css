@@ -1,7 +1,27 @@
-@media (min-width: 800px) {
+@media (min-width: 1200px) {
 
     #character-list {
         width: 100%;
-        
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 0xp 0xp;
+        grid-template-areas: 
+        'lilo gantu pleakley'
+        'jumba nani stitch'
+        ;
+        margin: 20px;
     }
+}
+
+.character-select {
+    align-self: center;
+    place-self: center;
+}
+
+.character-image {
+    width: 350px;
+    height: 350px;
+    border: 6px #C6A032 solid;
+    border-radius: 3%;
 }

@@ -3,7 +3,7 @@ import { renderCharacters, renderCharacter } from '../render-utils.js';
 const test = QUnit.test;
 
 test('renderCharacters should create a div displaying character image, name and anchor tag to click', (expect) => {
-    const expected = `<a href="./character-page/?id=4"><div class="character-select"><img src="/assets/pleakley.png" class="character-image"><p class="character-name">Wendy Pleakley</p></div></a>`;
+    const expected = `<a href="./character-page/?id=4"><div class="characters-select"><img src="/assets/pleakley.png" class="character-image"><p class="character-name">Wendy Pleakley</p></div></a>`;
 
     const agentPleakley = {
         id: '4',
