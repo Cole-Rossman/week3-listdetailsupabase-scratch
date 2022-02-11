@@ -5,7 +5,7 @@ const client = supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
 
 export async function getCharacters() {
     const resp = await client.from('characters').select('*');
-    console.log(resp);
+    // console.log(resp);
 
     return checkError(resp);
 }
