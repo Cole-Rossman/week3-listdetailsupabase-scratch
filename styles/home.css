@@ -11,10 +11,11 @@
         'jumba nani stitch'
         ;
         margin: 20px;
+        padding-left: 130px;
     }
 }
 
-.character-select {
+.characters-select {
     align-self: center;
     place-self: center;
 }
@@ -24,4 +25,10 @@
     height: 350px;
     border: 6px #C6A032 solid;
     border-radius: 3%;
+}
+
+.character-name {
+    border: 2px #287699 solid;
+    background-color: pink;
+    width: 117px;
 }
