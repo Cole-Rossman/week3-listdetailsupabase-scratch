@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Seaweed+Script&display=swap');
+
+.character-select {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+#character-h1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Seaweed Script', cursive;
+}
+
+p {
+    border: 4px aqua solid;
+    background-color: white;
+    font-size: x-large;
+}
+
+.character-image {
+    height: 450px;
+}
+
+.character-likes {
+    margin: 20px;
+}
+
+.character-name {
+    font-weight: bolder;
+}
+
+a {
+    padding-left: 10px;
+    border: 3px pink solid;
+    background: wheat;
+}

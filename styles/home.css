@@ -1,1 +1,34 @@
-/* add home page styles here */
+@media (min-width: 1200px) {
+
+    #character-list {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 0xp 0xp;
+        grid-template-areas: 
+        'lilo gantu pleakley'
+        'jumba nani stitch'
+        ;
+        margin: 20px;
+        padding-left: 130px;
+    }
+}
+
+.characters-select {
+    align-self: center;
+    place-self: center;
+}
+
+.character-image {
+    width: 350px;
+    height: 350px;
+    border: 6px #C6A032 solid;
+    border-radius: 3%;
+}
+
+.character-name {
+    border: 2px #287699 solid;
+    background-color: pink;
+    width: 117px;
+}
